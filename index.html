@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rivera's Shaders for Minecraft JAVA</title>
+<style>
+:root{color-scheme:dark;--bg:#0b100d;--panel:#151e17;--green:#b7ff76;--muted:#aab7aa}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:#f4f7f0;font-family:Arial,sans-serif}
+header{padding:22px 8%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #29372a}
+.logo{font-weight:900;letter-spacing:1px}.logo span,h1 span,h2 span{color:var(--green)}
+nav a{color:white;text-decoration:none;margin-left:22px;font-size:14px}
+.hero{padding:90px 8%;background:radial-gradient(ellipse at 80% 30%,#315b38 0%,#17291b 32%,#0b100d 70%);min-height:410px}
+.tag{color:var(--green);letter-spacing:3px;font-size:12px}
+h1{font-size:clamp(42px,7vw,76px);line-height:1.05;margin:22px 0}
+.hero p{max-width:570px;color:var(--muted);line-height:1.8}
+.btn{display:inline-block;background:var(--green);color:#10180c;padding:14px 20px;border-radius:6px;text-decoration:none;font-weight:bold;margin:14px 10px 0 0}
+.btn.secondary{background:transparent;border:1px solid #52694d;color:white}
+section.content{padding:65px 8%}
+h2{font-size:36px}
+.intro{color:var(--muted);line-height:1.8;max-width:650px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin-top:30px}
+.card{background:var(--panel);border:1px solid #2c3b2d;border-radius:12px;overflow:hidden}
+.art{height:150px;background:linear-gradient(160deg,#a9d8a1,#537e54 48%,#233c2d 49%,#101b16);position:relative}
+.art:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#09120de0,transparent 70%)}
+.art.two{background:linear-gradient(160deg,#b8c8dc,#e6c78e 48%,#597b56 49%,#10221a)}
+.art.three{background:linear-gradient(160deg,#a3c4ba,#e7d0a0 48%,#3e6949 49%,#101b16)}
+.card-body{padding:22px}
+.card p{color:var(--muted);line-height:1.7;font-size:14px}
+.card a{color:var(--green);font-size:14px}
+.label{font-size:11px;color:var(--green);letter-spacing:2px}
+.guide{border-left:2px solid var(--green);padding:5px 0 5px 20px;margin:25px 0}
+.guide p{color:var(--muted);line-height:1.7}
+footer{padding:28px 8%;border-top:1px solid #29372a;color:var(--muted);font-size:13px;line-height:1.8}
+@media(max-width:650px){header{align-items:flex-start;gap:18px;flex-direction:column}nav a{margin:0 15px 0 0}.hero{padding-top:65px}section.content{padding-top:45px;padding-bottom:45px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">RIVERA<span>'S SHADERS</span></div>
+  <nav><a href="#shaders">Shaders</a><a href="#guias">Guías</a></nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="tag">MINECRAFT JAVA EDITION</div>
+    <h1>Tu mundo.<br><span>Otra luz.</span></h1>
+    <p>Descubre nuevos shaders para Minecraft Java. Mejora la iluminación, disfruta de sombras increíbles y encuentra opciones para tu PC.</p>
+    <a class="btn" href="#shaders">EXPLORAR SHADERS ↘</a>
+    <a class="btn secondary" href="#guias">CÓMO INSTALAR</a>
+  </section>
+  <section class="content" id="shaders">
+    <div class="label">LA COLECCIÓN</div>
+    <h2>Encuentra tu <span>estilo.</span></h2>
+    <p class="intro">Explora estos proyectos y descarga los archivos desde sus páginas oficiales. Comprueba siempre la compatibilidad con tu versión de Minecraft.</p>
+    <div class="cards">
+      <article class="card">
+        <div class="art"></div><div class="card-body">
+          <div class="label">01 / EQUILIBRADO</div>
+          <h3>Complementary Shaders</h3>
+          <p>Iluminación, sombras y opciones para personalizar el aspecto del mundo.</p>
+          <a href="https://www.complementary.dev/" target="_blank" rel="noopener">Página oficial ↗</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="art two"></div><div class="card-body">
+          <div class="label">02 / RENDIMIENTO</div>
+          <h3>MakeUp Ultra Fast</h3>
+          <p>Prueba sus ajustes para buscar un equilibrio entre efectos visuales y fluidez.</p>
+          <a href="https://modrinth.com/shader/makeup-ultra-fast" target="_blank" rel="noopener">Ver proyecto ↗</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="art three"></div><div class="card-body">
+          <div class="label">03 / ATMOSFÉRICO</div>
+          <h3>Bliss Shaders</h3>
+          <p>Una opción visual con efectos atmosféricos. Revisa sus requisitos antes de instalarlo.</p>
+          <a href="https://modrinth.com/shader/bliss-shader" target="_blank" rel="noopener">Ver proyecto ↗</a>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="content" id="guias">
+    <div class="label">GUÍA RÁPIDA</div>
+    <h2>Instálalo <span>paso a paso.</span></h2>
+    <div class="guide"><h3>01. Instala Iris</h3><p>Descarga la versión compatible con tu Minecraft desde <a href="https://irisshaders.dev/" target="_blank" rel="noopener">la página oficial de Iris</a>.</p></div>
+    <div class="guide"><h3>02. Descarga tu shader</h3><p>Elige uno de los proyectos y comprueba que sea compatible con tu versión del juego.</p></div>
+    <div class="guide"><h3>03. Abre shaderpacks</h3><p>En Minecraft entra en Opciones → Vídeo → Shaders y usa la opción para abrir la carpeta de shaderpacks.</p></div>
+    <div class="guide"><h3>04. Activa y configura</h3><p>Coloca el ZIP del shader compatible en la carpeta, selecciónalo en el menú y ajusta sus efectos para tu PC.</p></div>
+  </section>
+</main>
+<footer>
+  <strong>RIVERA'S SHADERS FOR MINECRAFT JAVA</strong>
+  <p>Proyecto independiente y gratuito. No afiliado con Mojang ni Microsoft. Minecraft es una marca de sus respectivos propietarios.</p>
+</footer>
+</body>
+</html>
